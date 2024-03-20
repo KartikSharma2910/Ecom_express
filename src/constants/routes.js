@@ -1,43 +1,55 @@
+import {
+  Cart,
+  ForgetPassword,
+  Home,
+  Product,
+  Products,
+  ResetPassword,
+  SignIn,
+  SignUp,
+  Verification,
+} from "../components/features";
+
 const routes = {
   defaultRoutes: [
     {
       path: "/sign-in",
-      element: "Sign In",
+      element: SignIn,
     },
     {
       path: "/sign-up",
-      element: "Sign Up",
+      element: SignUp,
     },
     {
       path: "/verify",
-      element: "Verification",
+      element: Verification,
     },
     {
       path: "/forget-password",
-      element: "Forget Password",
+      element: ForgetPassword,
     },
     {
       path: "/reset-password",
-      element: "Reset Password",
+      element: ResetPassword,
     },
   ],
 
   privateRoutes: [
     {
       path: "/",
-      element: "Home",
+      element: Home,
     },
     {
       path: "/products",
-      element: "Products",
+      element: Products,
     },
     {
       path: "/product/:id",
-      element: "Product",
+      element: Product,
     },
     {
       path: "/cart",
-      element: "Cart",
+      element: Cart,
     },
   ],
 };
